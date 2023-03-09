@@ -26,8 +26,7 @@ import tqdm
 from models.utils import EarlyStopping
 
 
-# CUDA_VISIBLE_DEVICES= python -m torch.distributed.launch --nproc_per_node=4 train_CD.py
-# ssh -L 12580:127.0.0.1:12580 liuyikun@211.87.232.115
+
 def find_gpu():
     nvmlInit()
     mem = []
